@@ -1,0 +1,126 @@
+/***************
+  HTML Styles
+***************/
+body {
+    background-color: rgba(250, 250, 250, 0.57);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-font-smoothing: antialiased;
+    color: $secondary-text;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.block-margin {
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+// ------------------
+//    MAIN
+// ------------------------- 
+
+.main {
+    position: relative;
+    background-color: #f3f3f3;
+    background: url('../../public/img/main1.jpg') center center no-repeat;
+    background-size: cover;
+
+
+    &__title {
+        margin-top: 0;
+        font-size: 40px;
+    }
+    &__txt {
+        @extend .flow-text;
+        padding-bottom: 200px;
+    }
+    &__btn {
+        margin: 10px;
+    }
+}
+
+.line {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+// ------------------
+//    PAGE-HEADER
+// ------------------------- 
+
+.page-header {
+    margin-bottom: 40px;
+    padding: 40px 0;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.1);
+    & > h2 {
+        margin-top: 0;
+    }
+}
+
+// ------------------
+//    REGISTRATION-FORM
+// ------------------------- 
+
+.registration-form {
+    &__btn {
+        width: 200px;
+        margin: 10px 20px;
+    }
+    &__line {
+        width: 1px;
+        height: 200px;
+        margin: 0 auto;
+
+        background: rgba(0, 0, 0, .3);
+    }
+}
+
+nav .brand-logo {
+    font-weight: 700;
+    color: $secondary-color;
+}
+
+.pac-container {
+    font-family: 'roboto';
+    will-change: width, height;
+}
+
+.pac-item {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    line-height: 50px;
+    font-family: 'roboto';
+
+    span {
+        font-size: 16px;
+        line-height: 50px;
+        color: #E91E63;
+        display: inline-block;
+    }
+}
+
+.pac-icon {
+    margin: 15px 10px;
+}
+.pac-logo:after {
+    padding: 15px;
+    background-position: center;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
